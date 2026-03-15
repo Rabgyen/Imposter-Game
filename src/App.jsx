@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Card from "./components/Card";
 import PlayerList from "./components/PlayerList";
 import { usePlayerListContext } from "./context/GameContext";
