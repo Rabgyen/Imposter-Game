@@ -4,7 +4,6 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-/* global.css or component CSS */
 .my-scrollbar::-webkit-scrollbar {
   width: 6px;  
   padding: 0 2px;            
