@@ -1,10 +1,10 @@
 import React, { useState, useContext } from "react";
 
-const PlayerListContext = React.createContext();
+const GameContext = React.createContext();
 
-export const usePlayerListContext = () => useContext(PlayerListContext);
+export const useGameContext = () => useContext(GameContext);
 
-export const PlayerListProvider = ({ children }) => {
+export const GameContextProvider = ({ children }) => {
   const [playerList, setPlayerList] = useState([]);
   const [playerName, setPlayerName] = useState(`Player 1`);
   const [playerCount, setPlayerCount] = useState(1);
@@ -714,8 +714,8 @@ export const PlayerListProvider = ({ children }) => {
   };
 
   return (
-    <PlayerListContext.Provider value={value}>
+    <GameContext.Provider value={value}>
       {children}
-    </PlayerListContext.Provider>
+    </GameContext.Provider>
   );
 };

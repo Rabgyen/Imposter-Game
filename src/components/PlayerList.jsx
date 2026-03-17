@@ -1,5 +1,5 @@
 import React from "react";
-import { usePlayerListContext } from "../context/GameContext";
+import { useGameContext } from "../context/GameContext";
 import { LuUsersRound } from "react-icons/lu";
 import { GrPowerReset } from "react-icons/gr";
 import { FaRegLightbulb } from "react-icons/fa";
@@ -18,7 +18,7 @@ const PlayerList = ({onSubmit}) => {
     maxPlayerReached,
     addPlayer,
     reset,
-  } = usePlayerListContext();
+  } = useGameContext();
   return (
     <div className="p-4 w-full bg-[#1a1738] flex flex-col gap-3 border border-white rounded-2xl shadow-2xl">
       <div className="flex justify-between">

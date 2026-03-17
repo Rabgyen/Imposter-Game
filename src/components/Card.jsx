@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { usePlayerListContext } from "../context/GameContext";
+import { useGameContext } from "../context/GameContext";
 import { FaRegLightbulb } from "react-icons/fa";
 import { TbHandClick } from "react-icons/tb";
 import { VscDebugStart } from "react-icons/vsc";
@@ -8,7 +8,7 @@ import { FaRegEye } from "react-icons/fa";
 
 const Card = () => {
   const [flipped, setFlipped] = useState(false);
-  const { playerList, gameStarted, nextPlayer, currentPlayerIndex, randomWordGenerator, imposter, startGame, setGameStarted, setRenderComponent, setCurrentPlayerIndex } = usePlayerListContext();
+  const { playerList, gameStarted, nextPlayer, currentPlayerIndex, randomWordGenerator, imposter, startGame, setGameStarted, setRenderComponent, setCurrentPlayerIndex } = useGameContext();
   const [gameWord, setGameWord] = useState("");
   const [imposterNumber, setImposterNumber] = useState(null);
   const [imposterName, setImposterName] = useState("");

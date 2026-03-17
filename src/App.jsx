@@ -1,9 +1,9 @@
-import Card from "./components/Card";
+import Card from "./components/card";
 import PlayerList from "./components/PlayerList";
-import { usePlayerListContext } from "./context/GameContext";
+import { useGameContext } from "./context/GameContext";
 
 const App = () => {
-  const {renderComponent, setRenderComponent}= usePlayerListContext();
+  const {renderComponent, setRenderComponent}= useGameContext();
 
   const handleSubmit = () => {
     setRenderComponent(false)
