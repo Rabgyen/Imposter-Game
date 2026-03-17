@@ -20,7 +20,7 @@ const PlayerList = ({onSubmit}) => {
     reset,
   } = useGameContext();
   return (
-    <div className="p-4 w-full bg-[#1a1738] flex flex-col gap-3 border border-white rounded-2xl shadow-2xl">
+    <div className="p-4 w-full bg-[#1a1738] flex flex-col gap-3 rounded-2xl shadow-2xl">
       <div className="flex justify-between">
         <span className="flex items-center gap-1">
           <LuUsersRound className="text-green-500 text-lg" />
